@@ -1,74 +1,210 @@
-# NoteNest — Fixed Full Project
+# GWNotes
 
-This folder contains the repaired frontend + backend.
+GWNotes is a university study-material portal designed to help students quickly access academic resources in one place.
 
-## Folders
+The platform allows students to browse study material through a simple academic structure:
 
-- `notenest-frontend-style4/` — HTML/CSS/Vanilla JS frontend
-- `backend/` — Node.js + Express + MySQL backend
+**University → Course → Specialization/Branch → Semester → Subject → Study Material**
 
-## Local setup (Windows + XAMPP)
+Currently, GWNotes is focused on **DCRUST B.Tech students**.
 
-1. Start **MySQL** in XAMPP. This project is configured for port **3307** in `backend/.env`.
-2. Open a terminal in `backend` and run once after replacing the project:
+---
 
-```powershell
-npm install
-npm run db:setup
+## Features
+
+- Browse universities and courses
+- Semester-wise subject listing
+- Subject-wise study material
+- Syllabus access
+- Unit-wise Notes
+- Previous Year Question Papers (PYQs)
+- Search functionality
+- Admin login system
+- Role-based admin access
+- SUPER_ADMIN and UPLOADER roles
+- Material upload and management
+- Activity and login tracking
+- Responsive student dashboard
+- Cloud database support using TiDB Cloud
+
+---
+
+## Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+### Backend
+- Node.js
+- Express.js
+- REST API
+
+### Database
+- MySQL-compatible database
+- TiDB Cloud
+
+### Authentication & Security
+- JWT Authentication
+- bcryptjs
+- Role-based access control
+- Helmet
+- CORS
+- Express Rate Limit
+- Zod Validation
+
+---
+
+## Project Structure
+
+```text
+GWNotes/
+├── backend/
+│   ├── src/
+│   ├── certificate/
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   └── index.html
+│
+├── .gitignore
+└── README.md
 ```
 
-`db:setup` is non-destructive for normal project data. It creates missing tables/columns, migrates the old `ADMIN` role to `UPLOADER`, preserves academic data, and ensures the development `SUPER_ADMIN` exists.
+---
 
-3. Start backend:
+## Main Study Material Categories
 
-```powershell
+GWNotes currently focuses on:
+
+1. **Syllabus**
+2. **Notes**
+3. **Previous Year Question Papers (PYQs)**
+
+---
+
+## Admin Roles
+
+### SUPER_ADMIN
+The Super Admin can manage the complete portal, including academic data, uploaded materials, users, and activity records.
+
+### UPLOADER
+Uploaders can add and manage permitted study material according to their assigned access.
+
+---
+
+## Team
+
+| Role | Name |
+|---|---|
+| Team Leader | **Karan Kumar** |
+| Team Member | **Aryan** |
+| Team Member | **Bhoomi** |
+| Team Member | **Anushka** |
+
+---
+
+## Project Goal
+
+The goal of GWNotes is to create a simple, organized, and reliable platform where students can find university study resources without depending on scattered links, multiple groups, or individual teachers.
+
+---
+
+## Current Focus
+
+- University: **DCRUST**
+- Course: **B.Tech**
+- Academic resources: **Syllabus, Notes, and PYQs**
+
+More universities, courses, subjects, and resources can be added later through the admin system.
+
+---
+
+## Local Development
+
+### Backend
+
+```bash
+cd backend
+npm install
 npm run dev
 ```
 
-Expected:
+Backend runs locally on:
 
-- API: `http://localhost:5000`
-- Health: `http://localhost:5000/api/health`
-- Swagger: `http://localhost:5000/api/docs`
+```text
+http://localhost:5000
+```
 
-4. Open `notenest-frontend-style4/index.html` with **Live Server**.
+Health endpoint:
 
-Typical frontend URL:
+```text
+http://localhost:5000/api/health
+```
 
-`http://127.0.0.1:5500/notenest-frontend-style4/index.html`
+### Frontend
 
-## Development SUPER_ADMIN
+Open the frontend using a local development server such as VS Code Live Server.
 
-- Email: `admin@studyvault.local`
-- Password: `Admin@123`
+Example:
 
-Change this password before deployment.
+```text
+http://127.0.0.1:5500
+```
 
-## Roles
+---
 
-### SUPER_ADMIN
-- Full dashboard
-- Upload/publish/delete materials
-- Manage subjects and academic setup
-- Create/enable/disable uploader accounts
-- View activity logs and login history
+## Environment Variables
 
-### UPLOADER
-- Login
-- Upload files or external material links
-- View own uploads
-- Uploaded material is kept unpublished until SUPER_ADMIN reviews/publishes it
+Create a `.env` file inside the backend folder.
 
-## Uploads
+Important environment variables include:
 
-Upload endpoint:
+```env
+DB_HOST=
+DB_PORT=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=studyvault
 
-`POST /api/admin/materials/upload`
+DB_SSL=true
+DB_SSL_CA_PATH=certificate/isrgrootx1.pem
 
-Allowed files: PDF, DOC, DOCX, PPT, PPTX. Default max size: 20 MB.
+PORT=5000
+JWT_SECRET=
+JWT_EXPIRES_IN=1d
 
-Files are stored in:
+FRONTEND_ORIGIN=
+MAX_FILE_SIZE_MB=20
+UPLOAD_DIR=uploads/materials
+```
 
-`backend/uploads/materials/`
+> Never upload your `.env` file or database password to GitHub.
 
-Only their metadata/path is stored in MySQL.
+---
+
+## Deployment Plan
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** TiDB Cloud
+- **File Storage:** Cloud storage
+- **Search Visibility:** Google Search Console
+
+---
+
+## License
+
+This project is currently created for academic and educational purposes.
+
+---
+
+## GWNotes
+
+**Gateway to organized study material.**
