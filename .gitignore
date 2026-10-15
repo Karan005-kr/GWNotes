@@ -1,0 +1,10 @@
+.env
+backend/.env
+node_modules/
+backend/node_modules/
+backend/uploads/materials/*
+!backend/uploads/materials/.gitkeep
+*.log
+.DS_Store
+Thumbs.db
+.vscode/

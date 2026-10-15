@@ -1,0 +1,30 @@
+NOTENEST FIXED PROJECT - START HERE
+
+1) Replace your old project folder with this extracted folder.
+
+2) XAMPP:
+   Start MySQL. Your local project is configured for port 3307.
+
+3) VS Code terminal:
+   cd backend
+   npm install
+   npm run db:setup
+   npm run dev
+
+4) Check backend:
+   http://localhost:5000/api/health
+
+5) Frontend:
+   Open notenest-frontend-style4/index.html
+   Right-click -> Open with Live Server
+
+6) SUPER_ADMIN login:
+   Email: admin@studyvault.local
+   Password: Admin@123
+
+IMPORTANT:
+- backend/src/app.js is BACKEND code.
+- notenest-frontend-style4/js/app.js is FRONTEND code.
+- Do not copy one over the other.
+- Upload route is POST /api/admin/materials/upload and is registered in this build.
+- PDF/DOC/DOCX/PPT/PPTX upload is enabled.
