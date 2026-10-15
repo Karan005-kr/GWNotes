@@ -1,10 +1,24 @@
+# Secrets
 .env
 backend/.env
+*.env
+
+# Node
 node_modules/
 backend/node_modules/
-backend/uploads/materials/*
-!backend/uploads/materials/.gitkeep
+
+# Uploads
+backend/uploads/
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS / Editor
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Temporary
+tmp/
+temp/

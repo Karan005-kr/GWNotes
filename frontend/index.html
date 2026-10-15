@@ -3,188 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NoteNest University Study Material Portal" />
-  <title>NoteNest</title>
+  <meta name="description" content="GWNotes provides DCRUST B.Tech notes, syllabus and previous year question papers semester-wise and subject-wise." />
+  <title>GWNotes | DCRUST B.Tech Notes, Syllabus & PYQs</title>
   <link rel="stylesheet" href="css/style.css" />
 
-  <style>
-    .contact-section {
-      padding: 44px 0 70px;
-    }
-
-    .contact-shell {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 34px;
-      align-items: stretch;
-      padding: 42px;
-      border: 1px solid #e4eaf3;
-      border-radius: 28px;
-      background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 34%),
-        linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
-      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.07);
-    }
-
-    .contact-copy h2 {
-      margin: 8px 0 14px;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.05;
-      color: #12233f;
-    }
-
-    .contact-copy > p:not(.eyebrow) {
-      max-width: 680px;
-      margin: 0;
-      color: #667085;
-      font-size: 1.05rem;
-      line-height: 1.75;
-    }
-
-    .contact-points {
-      display: grid;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .contact-point {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 14px 16px;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid #e8edf5;
-    }
-
-    .contact-point-icon {
-      display: grid;
-      place-items: center;
-      width: 30px;
-      height: 30px;
-      flex: 0 0 30px;
-      border-radius: 50%;
-      background: #e8f1ff;
-      color: #1769ff;
-      font-weight: 800;
-      margin-top: 2px;
-    }
-
-    .contact-point strong {
-      display: block;
-      color: #172033;
-      margin-bottom: 4px;
-    }
-
-    .contact-point small {
-      display: block;
-      color: #7a8497;
-      line-height: 1.55;
-    }
-
-    .contact-card {
-      position: relative;
-      overflow: hidden;
-      padding: 32px;
-      border-radius: 24px;
-      background: #ffffff;
-      border: 1px solid #e5eaf2;
-      box-shadow: 0 16px 38px rgba(24, 39, 75, 0.08);
-    }
-
-    .contact-card::after {
-      content: "";
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      right: -55px;
-      bottom: -55px;
-      border-radius: 50%;
-      background: #edf4ff;
-    }
-
-    .contact-card-icon {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: #eaf2ff;
-      color: #1769ff;
-      font-size: 1.35rem;
-      margin-bottom: 18px;
-    }
-
-    .contact-card-label {
-      margin: 0 0 8px;
-      color: #1769ff;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.13em;
-    }
-
-    .contact-card h3 {
-      margin: 0 0 10px;
-      font-size: 1.55rem;
-      color: #14213d;
-    }
-
-    .contact-email {
-      position: relative;
-      z-index: 1;
-      display: inline-block;
-      margin: 18px 0 20px;
-      color: #14213d;
-      font-weight: 700;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    .contact-email:hover {
-      color: #1769ff;
-    }
-
-    .contact-mail-btn {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    @media (max-width: 820px) {
-      .contact-shell {
-        grid-template-columns: 1fr;
-        padding: 26px;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .contact-section {
-        padding: 28px 0 50px;
-      }
-
-      .contact-shell {
-        padding: 20px;
-        border-radius: 20px;
-      }
-
-      .contact-card {
-        padding: 24px;
-      }
-    }
-  </style>
+  <meta name="theme-color" content="#111111" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="GWNotes | DCRUST B.Tech Notes, Syllabus & PYQs" />
+  <meta property="og:description" content="DCRUST B.Tech notes, syllabus and PYQs organized by semester and subject." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/gwnotes-logo.png" />
 
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <button class="brand" data-route="home" aria-label="NoteNest home">
-        <span class="brand-logo-crop" aria-hidden="true"></span>
-        <span class="brand-copy">
-          <strong><span>Note</span><em>Nest</em></strong>
-          <small>Your Academic Resource Hub</small>
-        </span>
+      <button class="brand" data-route="home" aria-label="GWNotes home">
+        <img class="brand-logo" src="assets/gwnotes-logo.png" alt="GWNotes" />
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -332,7 +167,7 @@
         <div class="browser-card" id="universityStep">
           <div class="card-number">Step 1</div>
           <h2>Select University</h2>
-          <p class="muted">Choose your university to see the courses available on NoteNest.</p>
+          <p class="muted">Choose your university to see the courses available on GWNotes.</p>
           <label class="field-label" for="universitySelect">University</label>
           <select id="universitySelect" class="form-control">
             <option value="">Loading universities...</option>
@@ -400,7 +235,7 @@
           <button class="btn btn-primary" type="submit">Search</button>
         </form>
         <div id="searchResults" class="search-results">
-          <div class="empty-state"><strong>Search NoteNest</strong><p>Enter at least two characters to begin.</p></div>
+          <div class="empty-state"><strong>Search GWNotes</strong><p>Enter at least two characters to begin.</p></div>
         </div>
       </div>
     </section>
@@ -408,7 +243,7 @@
     <section id="adminView" class="view">
       <div class="container page-top">
         <p class="eyebrow">ADMINISTRATION</p>
-        <h1>NoteNest Admin</h1>
+        <h1>GWNotes Admin</h1>
         <p>Manage academic structure and control which documents are published.</p>
       </div>
 
@@ -416,10 +251,10 @@
         <div class="login-card">
           <div class="login-badge">ADMIN</div>
           <h2>Sign in</h2>
-          <p class="muted">Use an authorized NoteNest administrator account.</p>
+          <p class="muted">Use an authorized GWNotes administrator account.</p>
           <form id="adminLoginForm">
             <label class="field-label" for="adminEmail">Email</label>
-            <input class="form-control" id="adminEmail" type="email" value="admin@studyvault.local" autocomplete="username" required />
+            <input class="form-control" id="adminEmail" type="email" placeholder="Enter admin email" autocomplete="username" required />
             <label class="field-label" for="adminPassword">Password</label>
             <input class="form-control" id="adminPassword" type="password" autocomplete="current-password" required />
             <button class="btn btn-primary btn-full" type="submit">Login</button>
@@ -541,7 +376,7 @@
           <h2>Need help with your study material?</h2>
           <p>
             Missing notes, syllabus or PYQs? Found a wrong file or broken link?
-            Reach out to the NoteNest team and we’ll help you with it.
+            Reach out to the GWNotes team and we’ll help you with it.
           </p>
 
           <div class="contact-points">
@@ -565,7 +400,7 @@
               <span class="contact-point-icon">✓</span>
               <div>
                 <strong>Suggestions & Feedback</strong>
-                <small>Share ideas to make NoteNest more useful for students.</small>
+                <small>Share ideas to make GWNotes more useful for students.</small>
               </div>
             </div>
           </div>
@@ -580,12 +415,12 @@
             and subject if it is related to study material.
           </p>
 
-          <a class="contact-email" href="https://mail.google.com/mail/?view=cm&fs=1&to=karanje8765@gmail.com&su=NoteNest%20Support&body=Hello%20NoteNest%20Team%2C%0A%0AUniversity%3A%20%0ACourse%3A%20%0ASemester%3A%20%0ASubject%3A%20%0A%0AQuery%3A%20" target="_blank" rel="noopener noreferrer">
-            karanje8765@gmail.com
+          <a class="contact-email" href="https://mail.google.com/mail/?view=cm&fs=1&to=gwnotes.team@gmail.com&su=GWNotes%20Support&body=Hello%20GWNotes%20Team%2C%0A%0AUniversity%3A%20%0ACourse%3A%20%0ASemester%3A%20%0ASubject%3A%20%0A%0AQuery%3A%20" target="_blank" rel="noopener noreferrer">
+            gwnotes.team@gmail.com
           </a>
 
           <a class="btn btn-primary contact-mail-btn"
-             href="https://mail.google.com/mail/?view=cm&fs=1&to=karanje8765@gmail.com&su=NoteNest%20Support&body=Hello%20NoteNest%20Team%2C%0A%0AUniversity%3A%20%0ACourse%3A%20%0ASemester%3A%20%0ASubject%3A%20%0A%0AQuery%3A%20" target="_blank" rel="noopener noreferrer">
+             href="https://mail.google.com/mail/?view=cm&fs=1&to=gwnotes.team@gmail.com&su=GWNotes%20Support&body=Hello%20GWNotes%20Team%2C%0A%0AUniversity%3A%20%0ACourse%3A%20%0ASemester%3A%20%0ASubject%3A%20%0A%0AQuery%3A%20" target="_blank" rel="noopener noreferrer">
             Send Email <span>→</span>
           </a>
         </div>
@@ -596,7 +431,7 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <footer class="site-footer">
-    <div class="container footer-inner"><div><strong>NoteNest</strong><p>Your academic resources, organized.</p></div><div><span>Syllabus</span><span>Notes</span><span>PYQ</span></div></div>
+    <div class="container footer-inner"><div><strong>GWNotes</strong><p>Your academic resources, organized.</p></div><div><span>Syllabus</span><span>Notes</span><span>PYQ</span></div></div>
   </footer>
 
   <script src="js/config.js"></script>
